@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F0FFAD030201D3D003B5755 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F0FFACF30201D3D003B5755 /* Alamofire */; };
+		9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F0FFAD230201D5A003B5755 /* ComposableArchitecture */; };
+		9F681CA4302158D600A467FA /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9F681CA3302158D600A467FA /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9F0FFA2D301F7CDA003B5755 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F681CA4302158D600A467FA /* SwiftyJSON in Frameworks */,
+				9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */,
+				9F0FFAD030201D3D003B5755 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = "TmdbTCA-SwiftUI";
 			packageProductDependencies = (
+				9F0FFACF30201D3D003B5755 /* Alamofire */,
+				9F0FFAD230201D5A003B5755 /* ComposableArchitecture */,
+				9F681CA3302158D600A467FA /* SwiftyJSON */,
 			);
 			productName = "TmdbTCA-SwiftUI";
 			productReference = 9F0FFA1F301F7CD8003B5755 /* TmdbTCA-SwiftUI.app */;
@@ -195,6 +207,11 @@
 			);
 			mainGroup = 9F0FFA16301F7CD8003B5755;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9F0FFACE30201D3D003B5755 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9F0FFAD130201D5A003B5755 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				9F681CA2302158D600A467FA /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9F0FFA20301F7CD8003B5755 /* Products */;
 			projectDirPath = "";
@@ -550,6 +567,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F0FFACE30201D3D003B5755 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		9F0FFAD130201D5A003B5755 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.1;
+			};
+		};
+		9F681CA2302158D600A467FA /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F0FFACF30201D3D003B5755 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F0FFACE30201D3D003B5755 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9F0FFAD230201D5A003B5755 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F0FFAD130201D5A003B5755 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		9F681CA3302158D600A467FA /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F681CA2302158D600A467FA /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F0FFA17301F7CD8003B5755 /* Project object */;
 }
