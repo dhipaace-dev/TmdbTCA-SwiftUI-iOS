@@ -10,6 +10,7 @@ import Foundation
 
 @Reducer
 struct GenreFeature {
+    
     @ObservableState
     struct State: Equatable {
         var genres: [Genre] = []
@@ -19,7 +20,7 @@ struct GenreFeature {
     
     enum Action {
         case onAppear
-        case genresResponse(Result<GenreModel, AppError>)
+        case genreResponse(Result<GenreModel, AppError>)
         case genreTapped(Genre)
         case delegate(Delegate)
         
@@ -38,7 +39,7 @@ struct GenreFeature {
                 state.isLoading = true
                 state.errorMessage = nil
                 return .run { send in
-                    await send(.genresResponse(Result { try await getMovieGenreUseCase.call()}.mapError(toAppError)))
+                    await send(.genreResponse(Result { try await getMovieGenreUseCase.call()}.mapError(toAppError)))
                 }
             case let .genreResponse(.success(model)):
                 state.isLoading = false

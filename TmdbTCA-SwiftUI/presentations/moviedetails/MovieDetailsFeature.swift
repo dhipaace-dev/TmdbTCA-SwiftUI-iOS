@@ -28,7 +28,7 @@ struct MovieDetailsFeature {
         case detailsResponse(Result<MovieDetailsModel, AppError>)
         case showReviewsTapped
         case showTrailerTapped
-        case delegae(Delegate)
+        case delegate(Delegate)
         
         enum Delegate: Equatable {
             case showReviews(movieId: Int)
@@ -46,9 +46,9 @@ struct MovieDetailsFeature {
                 state.isLoading = true
                 state.errorMessage = nil
                 
-                var movieId = state.movieId
+                let movieId = state.movieId
                 return .run { send in
-                    await send(.detailsResponse(Result { try await getMovieDetailsUseCase(movieId: movieId)}.mapError(toAppError)))
+                    await send(.detailsResponse(Result { try await getMovieDetailsUseCase.call(movieId: movieId)}.mapError(toAppError)))
                 }
             case let .detailsResponse(.success(movie)):
                 state.isLoading = false
@@ -59,10 +59,10 @@ struct MovieDetailsFeature {
                 state.errorMessage = error.localizedDescription
                 return .none
             case .showReviewsTapped:
-                return .send(.delegae(.showReviews(movieId: state.movieId)))
+                return .send(.delegate(.showReviews(movieId: state.movieId)))
             case .showTrailerTapped:
-                return .send(.delegae(.showTrailer(movieId: state.movieId)))
-            case .delegae:
+                return .send(.delegate(.showTrailer(movieId: state.movieId)))
+            case .delegate:
                 return .none
             }
         }
