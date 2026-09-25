@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F019E6830667B5100A18A16 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 9F019E6730667B5100A18A16 /* Dependencies */; };
 		9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F0FFAD230201D5A003B5755 /* ComposableArchitecture */; };
 		9F23675B3066240B002812DC /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F23675030662206002812DC /* domain.framework */; };
+		9F7523E730667A74000AD160 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7523E630667A74000AD160 /* CasePaths */; };
+		9F7523E930667A74000AD160 /* CasePathsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7523E830667A74000AD160 /* CasePathsCore */; };
 		9FBD157E3066216C002175B8 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15753066211E002175B8 /* data.framework */; };
 		9FBD157F3066217D002175B8 /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15703066211E002175B8 /* app_framework.framework */; };
 /* End PBXBuildFile section */
@@ -85,8 +88,11 @@
 			files = (
 				9F23675B3066240B002812DC /* domain.framework in Frameworks */,
 				9FBD157F3066217D002175B8 /* app_framework.framework in Frameworks */,
+				9F7523E930667A74000AD160 /* CasePathsCore in Frameworks */,
+				9F019E6830667B5100A18A16 /* Dependencies in Frameworks */,
 				9FBD157E3066216C002175B8 /* data.framework in Frameworks */,
 				9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */,
+				9F7523E730667A74000AD160 /* CasePaths in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +189,9 @@
 			name = "TmdbTCA-SwiftUI";
 			packageProductDependencies = (
 				9F0FFAD230201D5A003B5755 /* ComposableArchitecture */,
+				9F7523E630667A74000AD160 /* CasePaths */,
+				9F7523E830667A74000AD160 /* CasePathsCore */,
+				9F019E6730667B5100A18A16 /* Dependencies */,
 			);
 			productName = "TmdbTCA-SwiftUI";
 			productReference = 9F0FFA1F301F7CD8003B5755 /* TmdbTCA-SwiftUI.app */;
@@ -268,6 +277,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9F0FFAD130201D5A003B5755 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				9F7523E530667A74000AD160 /* XCRemoteSwiftPackageReference "swift-case-paths" */,
+				9F019E6630667B5100A18A16 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9F0FFA20301F7CD8003B5755 /* Products */;
@@ -664,6 +675,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9F019E6630667B5100A18A16 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
 		9F0FFAD130201D5A003B5755 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -672,13 +691,36 @@
 				minimumVersion = 1.26.1;
 			};
 		};
+		9F7523E530667A74000AD160 /* XCRemoteSwiftPackageReference "swift-case-paths" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-case-paths";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9F019E6730667B5100A18A16 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F019E6630667B5100A18A16 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
 		9F0FFAD230201D5A003B5755 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9F0FFAD130201D5A003B5755 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		9F7523E630667A74000AD160 /* CasePaths */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F7523E530667A74000AD160 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePaths;
+		};
+		9F7523E830667A74000AD160 /* CasePathsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F7523E530667A74000AD160 /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePathsCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

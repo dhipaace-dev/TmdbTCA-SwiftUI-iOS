@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F019E6530667B2F00A18A16 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 9F019E6430667B2F00A18A16 /* Dependencies */; };
 		9F2367553066225C002812DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F2367543066225C002812DC /* Alamofire */; };
 		9F23675A306623AF002812DC /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F236759306623AF002812DC /* data.framework */; };
+		9F7523D330666F28000AD160 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7523D230666F28000AD160 /* ComposableArchitecture */; };
 		9FFD31CF30661E8B00BE626C /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFD31C330661E8B00BE626C /* app_framework.framework */; };
 		9FFD31FA30661F5C00BE626C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9FFD31F930661F5C00BE626C /* SwiftyJSON */; };
 /* End PBXBuildFile section */
@@ -47,8 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F019E6530667B2F00A18A16 /* Dependencies in Frameworks */,
 				9F23675A306623AF002812DC /* data.framework in Frameworks */,
 				9FFD31FA30661F5C00BE626C /* SwiftyJSON in Frameworks */,
+				9F7523D330666F28000AD160 /* ComposableArchitecture in Frameworks */,
 				9F2367553066225C002812DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +128,8 @@
 			packageProductDependencies = (
 				9FFD31F930661F5C00BE626C /* SwiftyJSON */,
 				9F2367543066225C002812DC /* Alamofire */,
+				9F7523D230666F28000AD160 /* ComposableArchitecture */,
+				9F019E6430667B2F00A18A16 /* Dependencies */,
 			);
 			productName = app_framework;
 			productReference = 9FFD31C330661E8B00BE626C /* app_framework.framework */;
@@ -182,6 +188,8 @@
 			packageReferences = (
 				9FFD31F830661F5C00BE626C /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				9F2367533066225C002812DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9F7523D130666F28000AD160 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				9F019E6330667B2F00A18A16 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9FFD31C430661E8B00BE626C /* Products */;
@@ -489,12 +497,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9F019E6330667B2F00A18A16 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
 		9F2367533066225C002812DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.12.2;
+			};
+		};
+		9F7523D130666F28000AD160 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.2;
 			};
 		};
 		9FFD31F830661F5C00BE626C /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
@@ -508,10 +532,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9F019E6430667B2F00A18A16 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F019E6330667B2F00A18A16 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
 		9F2367543066225C002812DC /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9F2367533066225C002812DC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		9F7523D230666F28000AD160 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F7523D130666F28000AD160 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 		9FFD31F930661F5C00BE626C /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
