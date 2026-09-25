@@ -6,9 +6,9 @@
 //
 
 import Foundation
-//import domain
+import domain
 
-public class AppRepositoryImpl: AppRepository {
+public class AppRepositoryImpl: AppRepository, Sendable {
 
     let appDataSource: AppDataSource
 

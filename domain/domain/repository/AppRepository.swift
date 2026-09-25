@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol AppRepository {
+public protocol AppRepository: Sendable {
     func fetchMovieGenre() async throws -> GenreModel
     func fetchMovieByGenre(genreId: String, page: Int) async throws -> DiscoverMovieByGenreModel
     func fetchMovieDetail(movieId: Int) async throws -> MovieDetailsModel

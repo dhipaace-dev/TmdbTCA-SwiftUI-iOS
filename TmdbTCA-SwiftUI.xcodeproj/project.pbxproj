@@ -33,6 +33,7 @@
 		9F0FFA1F301F7CD8003B5755 /* TmdbTCA-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TmdbTCA-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0FFA2C301F7CDA003B5755 /* TmdbTCA-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbTCA-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0FFA36301F7CDA003B5755 /* TmdbTCA-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbTCA-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFD3125306615B700BE626C /* domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = domain.xcodeproj; path = domain/domain.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -84,6 +85,7 @@
 		9F0FFA16301F7CD8003B5755 = {
 			isa = PBXGroup;
 			children = (
+				9FFD3125306615B700BE626C /* domain.xcodeproj */,
 				9F0FFA21301F7CD8003B5755 /* TmdbTCA-SwiftUI */,
 				9F0FFA2F301F7CDA003B5755 /* TmdbTCA-SwiftUITests */,
 				9F0FFA39301F7CDA003B5755 /* TmdbTCA-SwiftUIUITests */,
@@ -97,6 +99,13 @@
 				9F0FFA1F301F7CD8003B5755 /* TmdbTCA-SwiftUI.app */,
 				9F0FFA2C301F7CDA003B5755 /* TmdbTCA-SwiftUITests.xctest */,
 				9F0FFA36301F7CDA003B5755 /* TmdbTCA-SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FFD3126306615B700BE626C /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +224,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9F0FFA20301F7CD8003B5755 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9FFD3126306615B700BE626C /* Products */;
+					ProjectRef = 9FFD3125306615B700BE626C /* domain.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9F0FFA1E301F7CD8003B5755 /* TmdbTCA-SwiftUI */,
