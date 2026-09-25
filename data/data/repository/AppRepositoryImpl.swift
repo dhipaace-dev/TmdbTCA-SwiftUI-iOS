@@ -12,7 +12,7 @@ public class AppRepositoryImpl: AppRepository, Sendable {
 
     let appDataSource: AppDataSource
 
-    init(appDataSource: AppDataSource) {
+    public init(appDataSource: AppDataSource) {
         self.appDataSource = appDataSource
     }
 

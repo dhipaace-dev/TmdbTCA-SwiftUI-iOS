@@ -27,6 +27,20 @@
 			remoteGlobalIDString = 9F0FFA1E301F7CD8003B5755;
 			remoteInfo = "TmdbTCA-SwiftUI";
 		};
+		9FFD31B530661BF700BE626C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FFD3125306615B700BE626C /* domain.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FFD310A306615B600BE626C;
+			remoteInfo = domain;
+		};
+		9FFD31B730661BFC00BE626C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FFD318630661B4F00BE626C /* data.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FFD316B30661B4E00BE626C;
+			remoteInfo = data;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +48,7 @@
 		9F0FFA2C301F7CDA003B5755 /* TmdbTCA-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbTCA-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0FFA36301F7CDA003B5755 /* TmdbTCA-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbTCA-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFD3125306615B700BE626C /* domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = domain.xcodeproj; path = domain/domain.xcodeproj; sourceTree = "<group>"; };
+		9FFD318630661B4F00BE626C /* data.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = data.xcodeproj; path = data/data.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,6 +100,7 @@
 		9F0FFA16301F7CD8003B5755 = {
 			isa = PBXGroup;
 			children = (
+				9FFD318630661B4F00BE626C /* data.xcodeproj */,
 				9FFD3125306615B700BE626C /* domain.xcodeproj */,
 				9F0FFA21301F7CD8003B5755 /* TmdbTCA-SwiftUI */,
 				9F0FFA2F301F7CDA003B5755 /* TmdbTCA-SwiftUITests */,
@@ -110,6 +126,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9FFD318730661B4F00BE626C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +147,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				9FFD31B830661BFC00BE626C /* PBXTargetDependency */,
+				9FFD31B630661BF700BE626C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9F0FFA21301F7CD8003B5755 /* TmdbTCA-SwiftUI */,
@@ -226,6 +251,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 9FFD318730661B4F00BE626C /* Products */;
+					ProjectRef = 9FFD318630661B4F00BE626C /* data.xcodeproj */;
+				},
+				{
 					ProductGroup = 9FFD3126306615B700BE626C /* Products */;
 					ProjectRef = 9FFD3125306615B700BE626C /* domain.xcodeproj */;
 				},
@@ -297,6 +326,16 @@
 			isa = PBXTargetDependency;
 			target = 9F0FFA1E301F7CD8003B5755 /* TmdbTCA-SwiftUI */;
 			targetProxy = 9F0FFA37301F7CDA003B5755 /* PBXContainerItemProxy */;
+		};
+		9FFD31B630661BF700BE626C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = domain;
+			targetProxy = 9FFD31B530661BF700BE626C /* PBXContainerItemProxy */;
+		};
+		9FFD31B830661BFC00BE626C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = data;
+			targetProxy = 9FFD31B730661BFC00BE626C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
