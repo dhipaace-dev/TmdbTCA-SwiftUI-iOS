@@ -8,10 +8,14 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct MovieTrailerView: View {
+public struct MovieTrailerView: View {
     @Bindable var store: StoreOf<MovieTrailerFeature>
     
-    var body: some View {
+    public init(store: StoreOf<MovieTrailerFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
         Group {
             if let movieKey = store.movieKey, !movieKey.isEmpty, let url = URL(string: "https://www.youtube.com/embed/\(movieKey)") {
                 WebView(url: url)
