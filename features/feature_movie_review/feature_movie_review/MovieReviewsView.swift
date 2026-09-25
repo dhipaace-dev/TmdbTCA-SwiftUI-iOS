@@ -8,10 +8,14 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct MovieReviewsView: View {
+public struct MovieReviewsView: View {
     @Bindable var store: StoreOf<MovieReviewsFeature>
     
-    var body: some View {
+    public init(store: StoreOf<MovieReviewsFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
         List(store.reviews) { review in
             VStack {
                 Text(review.content)

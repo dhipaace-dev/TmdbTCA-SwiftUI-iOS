@@ -14,6 +14,8 @@
 		9F019FB13066AAA500A18A16 /* feature_movie_by_genre.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F019FA03066A9B000A18A16 /* feature_movie_by_genre.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F019FF73066B5E900A18A16 /* feature_movie_details.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F019FE73066B55D00A18A16 /* feature_movie_details.framework */; };
 		9F019FF83066B5E900A18A16 /* feature_movie_details.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F019FE73066B55D00A18A16 /* feature_movie_details.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F01A0433066BC5C00A18A16 /* feature_movie_review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A02B3066BBB100A18A16 /* feature_movie_review.framework */; };
+		9F01A0443066BC5C00A18A16 /* feature_movie_review.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A02B3066BBB100A18A16 /* feature_movie_review.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F0FFAD230201D5A003B5755 /* ComposableArchitecture */; };
 		9F23675B3066240B002812DC /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F23675030662206002812DC /* domain.framework */; };
 		9F7523E730667A74000AD160 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7523E630667A74000AD160 /* CasePaths */; };
@@ -43,6 +45,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9F019FC73066B55C00A18A16;
 			remoteInfo = feature_movie_details;
+		};
+		9F01A02A3066BBB100A18A16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F01A0253066BBB000A18A16 /* feature_movie_review.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F01A00B3066BBB000A18A16;
+			remoteInfo = feature_movie_review;
 		};
 		9F0FFA2D301F7CDA003B5755 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -90,6 +99,7 @@
 			files = (
 				9F019FB13066AAA500A18A16 /* feature_movie_by_genre.framework in Embed Frameworks */,
 				9F019EA5306698FA00A18A16 /* feature_genre.framework in Embed Frameworks */,
+				9F01A0443066BC5C00A18A16 /* feature_movie_review.framework in Embed Frameworks */,
 				9F019FF83066B5E900A18A16 /* feature_movie_details.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -101,6 +111,7 @@
 		9F019E8F3066982A00A18A16 /* feature_genre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = feature_genre.xcodeproj; path = feature_genre/feature_genre.xcodeproj; sourceTree = "<group>"; };
 		9F019F9A3066A9B000A18A16 /* feature_movie_by_genre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = feature_movie_by_genre.xcodeproj; path = feature_movie_by_genre/feature_movie_by_genre.xcodeproj; sourceTree = "<group>"; };
 		9F019FE13066B55D00A18A16 /* feature_movie_details.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = feature_movie_details.xcodeproj; path = feature_movie_details/feature_movie_details.xcodeproj; sourceTree = "<group>"; };
+		9F01A0253066BBB000A18A16 /* feature_movie_review.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = feature_movie_review.xcodeproj; path = feature_movie_review/feature_movie_review.xcodeproj; sourceTree = "<group>"; };
 		9F0FFA1F301F7CD8003B5755 /* TmdbTCA-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TmdbTCA-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0FFA2C301F7CDA003B5755 /* TmdbTCA-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbTCA-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0FFA36301F7CDA003B5755 /* TmdbTCA-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbTCA-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +150,7 @@
 				9F7523E930667A74000AD160 /* CasePathsCore in Frameworks */,
 				9F019E6830667B5100A18A16 /* Dependencies in Frameworks */,
 				9FBD157E3066216C002175B8 /* data.framework in Frameworks */,
+				9F01A0433066BC5C00A18A16 /* feature_movie_review.framework in Frameworks */,
 				9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */,
 				9F7523E730667A74000AD160 /* CasePaths in Frameworks */,
 				9F019EA4306698FA00A18A16 /* feature_genre.framework in Frameworks */,
@@ -165,6 +177,7 @@
 		9F019E6A3066980100A18A16 /* features */ = {
 			isa = PBXGroup;
 			children = (
+				9F01A0253066BBB000A18A16 /* feature_movie_review.xcodeproj */,
 				9F019FE13066B55D00A18A16 /* feature_movie_details.xcodeproj */,
 				9F019F9A3066A9B000A18A16 /* feature_movie_by_genre.xcodeproj */,
 				9F019E8F3066982A00A18A16 /* feature_genre.xcodeproj */,
@@ -192,6 +205,14 @@
 			isa = PBXGroup;
 			children = (
 				9F019FE73066B55D00A18A16 /* feature_movie_details.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F01A0263066BBB000A18A16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F01A02B3066BBB100A18A16 /* feature_movie_review.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -393,6 +414,10 @@
 					ProductGroup = 9F019FE23066B55D00A18A16 /* Products */;
 					ProjectRef = 9F019FE13066B55D00A18A16 /* feature_movie_details.xcodeproj */;
 				},
+				{
+					ProductGroup = 9F01A0263066BBB000A18A16 /* Products */;
+					ProjectRef = 9F01A0253066BBB000A18A16 /* feature_movie_review.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -423,6 +448,13 @@
 			fileType = wrapper.framework;
 			path = feature_movie_details.framework;
 			remoteRef = 9F019FE63066B55D00A18A16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9F01A02B3066BBB100A18A16 /* feature_movie_review.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = feature_movie_review.framework;
+			remoteRef = 9F01A02A3066BBB100A18A16 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		9F23675030662206002812DC /* domain.framework */ = {

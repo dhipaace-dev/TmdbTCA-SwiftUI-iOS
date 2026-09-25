@@ -10,6 +10,7 @@ import SwiftUI
 import feature_genre
 import feature_movie_by_genre
 import feature_movie_details
+import feature_movie_review
 
 struct ContentView: View {
     @Bindable var store: StoreOf<AppFeature>
