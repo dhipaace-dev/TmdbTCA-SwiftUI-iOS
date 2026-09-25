@@ -8,10 +8,14 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct SplashView: View {
+public struct SplashView: View {
     let store: StoreOf<SplashFeature>
     
-    var body: some View {
+    public init(store: StoreOf<SplashFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
         Text("TMDB App")
             .font(.largeTitle)
             .onAppear {
