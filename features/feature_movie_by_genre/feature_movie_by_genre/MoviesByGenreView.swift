@@ -8,10 +8,14 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct MoviesByGenreView: View {
+public struct MoviesByGenreView: View {
     @Bindable var store: StoreOf<MoviesByGenreFeature>
     
-    var body: some View {
+    public init(store: StoreOf<MoviesByGenreFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
         List(store.movies) { movie in
             HStack {
                 AsyncImage(url: URL(string: movie.imageUrl)) { image in
