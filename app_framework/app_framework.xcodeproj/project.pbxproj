@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F019E6530667B2F00A18A16 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 9F019E6430667B2F00A18A16 /* Dependencies */; };
+		9F01A0E33066CC2F00A18A16 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F236759306623AF002812DC /* data.framework */; };
 		9F2367553066225C002812DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F2367543066225C002812DC /* Alamofire */; };
-		9F23675A306623AF002812DC /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F236759306623AF002812DC /* data.framework */; };
 		9F7523D330666F28000AD160 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7523D230666F28000AD160 /* ComposableArchitecture */; };
 		9FFD31CF30661E8B00BE626C /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFD31C330661E8B00BE626C /* app_framework.framework */; };
 		9FFD31FA30661F5C00BE626C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 9FFD31F930661F5C00BE626C /* SwiftyJSON */; };
@@ -50,8 +50,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F019E6530667B2F00A18A16 /* Dependencies in Frameworks */,
-				9F23675A306623AF002812DC /* data.framework in Frameworks */,
 				9FFD31FA30661F5C00BE626C /* SwiftyJSON in Frameworks */,
+				9F01A0E33066CC2F00A18A16 /* data.framework in Frameworks */,
 				9F7523D330666F28000AD160 /* ComposableArchitecture in Frameworks */,
 				9F2367553066225C002812DC /* Alamofire in Frameworks */,
 			);

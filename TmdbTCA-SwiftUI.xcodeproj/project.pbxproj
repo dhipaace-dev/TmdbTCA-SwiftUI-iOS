@@ -20,12 +20,15 @@
 		9F01A08A3066C3EB00A18A16 /* feature_movie_trailer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A06F3066C36200A18A16 /* feature_movie_trailer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F01A0C53066C8A100A18A16 /* feature_splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A0B53066C83600A18A16 /* feature_splash.framework */; };
 		9F01A0C63066C8A100A18A16 /* feature_splash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A0B53066C83600A18A16 /* feature_splash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F01A0E63066CC7300A18A16 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F23675030662206002812DC /* domain.framework */; };
+		9F01A0E73066CC7300A18A16 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F23675030662206002812DC /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F01A0E83066CC8500A18A16 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15753066211E002175B8 /* data.framework */; };
+		9F01A0E93066CC8500A18A16 /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15753066211E002175B8 /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F01A0EA3066CC8600A18A16 /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15703066211E002175B8 /* app_framework.framework */; };
+		9F01A0EB3066CC8600A18A16 /* app_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15703066211E002175B8 /* app_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F0FFAD230201D5A003B5755 /* ComposableArchitecture */; };
-		9F23675B3066240B002812DC /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F23675030662206002812DC /* domain.framework */; };
 		9F7523E730667A74000AD160 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7523E630667A74000AD160 /* CasePaths */; };
 		9F7523E930667A74000AD160 /* CasePathsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7523E830667A74000AD160 /* CasePathsCore */; };
-		9FBD157E3066216C002175B8 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15753066211E002175B8 /* data.framework */; };
-		9FBD157F3066217D002175B8 /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBD15703066211E002175B8 /* app_framework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,9 @@
 				9F019FB13066AAA500A18A16 /* feature_movie_by_genre.framework in Embed Frameworks */,
 				9F01A08A3066C3EB00A18A16 /* feature_movie_trailer.framework in Embed Frameworks */,
 				9F01A0C63066C8A100A18A16 /* feature_splash.framework in Embed Frameworks */,
+				9F01A0EB3066CC8600A18A16 /* app_framework.framework in Embed Frameworks */,
+				9F01A0E73066CC7300A18A16 /* domain.framework in Embed Frameworks */,
+				9F01A0E93066CC8500A18A16 /* data.framework in Embed Frameworks */,
 				9F019EA5306698FA00A18A16 /* feature_genre.framework in Embed Frameworks */,
 				9F01A0443066BC5C00A18A16 /* feature_movie_review.framework in Embed Frameworks */,
 				9F019FF83066B5E900A18A16 /* feature_movie_details.framework in Embed Frameworks */,
@@ -165,14 +171,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F23675B3066240B002812DC /* domain.framework in Frameworks */,
+				9F01A0EA3066CC8600A18A16 /* app_framework.framework in Frameworks */,
 				9F019FF73066B5E900A18A16 /* feature_movie_details.framework in Frameworks */,
 				9F019FB03066AAA500A18A16 /* feature_movie_by_genre.framework in Frameworks */,
-				9FBD157F3066217D002175B8 /* app_framework.framework in Frameworks */,
+				9F01A0E83066CC8500A18A16 /* data.framework in Frameworks */,
 				9F7523E930667A74000AD160 /* CasePathsCore in Frameworks */,
 				9F019E6830667B5100A18A16 /* Dependencies in Frameworks */,
-				9FBD157E3066216C002175B8 /* data.framework in Frameworks */,
 				9F01A0C53066C8A100A18A16 /* feature_splash.framework in Frameworks */,
+				9F01A0E63066CC7300A18A16 /* domain.framework in Frameworks */,
 				9F01A0433066BC5C00A18A16 /* feature_movie_review.framework in Frameworks */,
 				9F01A0893066C3EB00A18A16 /* feature_movie_trailer.framework in Frameworks */,
 				9F0FFAD330201D5A003B5755 /* ComposableArchitecture in Frameworks */,

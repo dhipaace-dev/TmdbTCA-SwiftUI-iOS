@@ -11,10 +11,10 @@
 		9F01A0343066BBEA00A18A16 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F01A0333066BBEA00A18A16 /* ComposableArchitecture */; };
 		9F01A0373066BBF500A18A16 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 9F01A0363066BBF500A18A16 /* Dependencies */; };
 		9F01A03A3066BC0000A18A16 /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 9F01A0393066BC0000A18A16 /* CasePaths */; };
-		9F01A03D3066BC4000A18A16 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A03C3066BC4000A18A16 /* domain.framework */; };
-		9F01A03E3066BC4000A18A16 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A03C3066BC4000A18A16 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F01A0413066BC4400A18A16 /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A0403066BC4400A18A16 /* app_framework.framework */; };
-		9F01A0423066BC4400A18A16 /* app_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A0403066BC4400A18A16 /* app_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F01A0CC3066CBFA00A18A16 /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A0403066BC4400A18A16 /* app_framework.framework */; };
+		9F01A0CD3066CBFA00A18A16 /* app_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A0403066BC4400A18A16 /* app_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F01A0CF3066CBFB00A18A16 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A03C3066BC4000A18A16 /* domain.framework */; };
+		9F01A0D03066CBFB00A18A16 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F01A03C3066BC4000A18A16 /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9F01A03F3066BC4000A18A16 /* Embed Frameworks */ = {
+		9F01A0CE3066CBFA00A18A16 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F01A03E3066BC4000A18A16 /* domain.framework in Embed Frameworks */,
-				9F01A0423066BC4400A18A16 /* app_framework.framework in Embed Frameworks */,
+				9F01A0D03066CBFB00A18A16 /* domain.framework in Embed Frameworks */,
+				9F01A0CD3066CBFA00A18A16 /* app_framework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F01A0413066BC4400A18A16 /* app_framework.framework in Frameworks */,
-				9F01A03D3066BC4000A18A16 /* domain.framework in Frameworks */,
+				9F01A0CF3066CBFB00A18A16 /* domain.framework in Frameworks */,
+				9F01A0CC3066CBFA00A18A16 /* app_framework.framework in Frameworks */,
 				9F01A0343066BBEA00A18A16 /* ComposableArchitecture in Frameworks */,
 				9F01A0373066BBF500A18A16 /* Dependencies in Frameworks */,
 				9F01A03A3066BC0000A18A16 /* CasePaths in Frameworks */,
@@ -135,7 +135,7 @@
 				9F01A0073066BBB000A18A16 /* Sources */,
 				9F01A0083066BBB000A18A16 /* Frameworks */,
 				9F01A0093066BBB000A18A16 /* Resources */,
-				9F01A03F3066BC4000A18A16 /* Embed Frameworks */,
+				9F01A0CE3066CBFA00A18A16 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
