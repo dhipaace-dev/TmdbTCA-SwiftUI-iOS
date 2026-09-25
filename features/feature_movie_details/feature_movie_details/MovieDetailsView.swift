@@ -8,10 +8,14 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct MovieDetailsView: View {
+public struct MovieDetailsView: View {
     @Bindable var store: StoreOf<MovieDetailsFeature>
     
-    var body: some View {
+    public init(store: StoreOf<MovieDetailsFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
         ScrollView {
             VStack(spacing: 20) {
                 Text(store.movie?.title ?? "")
