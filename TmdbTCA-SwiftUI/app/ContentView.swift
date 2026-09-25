@@ -7,6 +7,7 @@
 
 import ComposableArchitecture
 import SwiftUI
+import feature_genre
 
 struct ContentView: View {
     @Bindable var store: StoreOf<AppFeature>

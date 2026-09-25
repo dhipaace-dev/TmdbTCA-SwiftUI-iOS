@@ -8,10 +8,14 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct GenreView: View {
+public struct GenreView: View {
     @Bindable var store: StoreOf<GenreFeature>
     
-    var body: some View {
+    public init(store: StoreOf<GenreFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
         List(store.genres) { genre in
             Text(genre.name)
                 .bold()
